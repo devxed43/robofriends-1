@@ -5,11 +5,12 @@ import React, { Fragment } from "react";
 // const Card = (props) => {
 // const { name, email, id } = props;
 
-const Card = ({ name, email, id }) => {
+const Card = ({ robot }) => {
+  const { id, name, email } = robot;
   return (
     <Fragment>
       <div className="bg-light-green dib br3 pa3 mar2 grow bw2 shadow-5">
-        <img alt="robots" src={`https://robohash.org/${id}`} />
+        <img alt={`${id}`} src={`https://robohash.org/${id}`} />
         <div>
           <h2>{name}</h2>
           <p>{email}</p>
