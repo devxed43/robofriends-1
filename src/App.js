@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import SearchBox from "./SearchBox";
 import CardList from "./CardList";
 import Scroll from "./Scroll";
-import "./App.css";
 
 class App extends Component {
   constructor() {
@@ -14,8 +13,6 @@ class App extends Component {
     };
   }
 
-  //   part of react so arrow function not needed
-  //   regular function
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => {
